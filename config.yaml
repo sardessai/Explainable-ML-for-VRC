@@ -1,0 +1,35 @@
+project:
+  name: "Explainable-ML-for-VRC"
+  instrument: "NIFTY 50"
+  frequency: "15min"
+  history_years: 5
+
+paths:
+  raw_data: "data/raw"
+  interim_data: "data/interim"
+  processed_data: "data/processed"
+  outputs: "outputs"
+
+data:
+  market_open: "09:15"
+  market_close: "15:30"
+  chunk_days: 90
+  timezone: "Asia/Kolkata"
+
+target:
+  future_horizon_intervals: 25
+  low_quantile: 0.30
+  high_quantile: 0.70
+
+features:
+  use_gap_features: true
+  use_expiry_flag: true
+  use_futures_oi: true
+
+models:
+  whitebox_model: "logistic_regression"
+  blackbox_model: "mlp"
+  tree_model: "xgboost"
+
+logging:
+  level: "INFO"

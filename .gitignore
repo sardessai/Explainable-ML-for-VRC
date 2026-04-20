@@ -1,0 +1,39 @@
+# Virtual environment
+.venv/
+venv/
+
+# Environment files
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs and outputs
+outputs/logs/
+*.log
+
+# Data
+data/raw/
+data/interim/
+data/processed/
+data/external/
+
+# Model artifacts
+outputs/model_artifacts/
+outputs/shap_outputs/
+
+# Test / cache
+.pytest_cache/
+.coverage
+htmlcov/
